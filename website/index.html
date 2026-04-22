@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organization Website</title>
+  </head>
+  <body>
+    <h1>Organization Website</h1>
+    <p>Welcome. This sample page includes the chatbot widget integration.</p>
+
+    <script src="../widget/chatbot.js"></script>
+    <script>
+      window.WebsiteChatbot.init({
+        apiBaseUrl: "http://localhost:8000",
+        apiPrefix: "/api",
+        organizationName: "Acme Organization",
+        cssUrl: "../widget/chatbot.css",
+      });
+    </script>
+  </body>
+</html>

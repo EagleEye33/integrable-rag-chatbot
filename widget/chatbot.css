@@ -1,0 +1,118 @@
+.chatbot-toggle {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 56px;
+  height: 56px;
+  border: none;
+  border-radius: 999px;
+  color: #ffffff;
+  background: #ff7a00;
+  border: 2px solid #111111;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+.chatbot-panel {
+  position: fixed;
+  right: 24px;
+  bottom: 92px;
+  width: 360px;
+  height: 500px;
+  background: #ffffff;
+  border: 1px solid #4a4a4a;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  color: #111111;
+}
+
+.chatbot-panel.open {
+  display: flex;
+}
+
+.chatbot-header {
+  padding: 12px 14px;
+  background: #111111;
+  color: #ffffff;
+  border-bottom: 2px solid #ff7a00;
+  font-weight: 700;
+}
+
+.chatbot-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chatbot-msg {
+  max-width: 85%;
+  line-height: 1.35;
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.chatbot-msg.user {
+  background: #ff7a00;
+  color: #111111;
+  align-self: flex-end;
+}
+
+.chatbot-msg.bot {
+  background: #e5e5e5;
+  color: #111111;
+  border: 1px solid #b8b8b8;
+  align-self: flex-start;
+}
+
+.chatbot-sources {
+  margin-top: 6px;
+  font-size: 11px;
+  color: #4a4a4a;
+}
+
+.chatbot-input-wrap {
+  display: flex;
+  gap: 8px;
+  border-top: 1px solid #4a4a4a;
+  background: #f3f3f3;
+  padding: 10px;
+}
+
+.chatbot-input-wrap input {
+  flex: 1;
+  border: 1px solid #7c7c7c;
+  background: #ffffff;
+  color: #111111;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+.chatbot-input-wrap button {
+  border: 1px solid #111111;
+  border-radius: 8px;
+  padding: 8px 12px;
+  color: #111111;
+  background: #ff7a00;
+  cursor: pointer;
+}
+
+.chatbot-panel:hover,
+.chatbot-panel:hover * {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='8' fill='%23ff7a00' stroke='%23111111' stroke-width='2'/%3E%3Ccircle cx='10' cy='10' r='2' fill='%23ffffff'/%3E%3C/svg%3E")
+      10 10,
+    auto;
+}
+
+.chatbot-toggle:hover {
+  transform: scale(1.05);
+  background: #ff8c1a;
+}
